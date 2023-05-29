@@ -38,6 +38,8 @@ p {
     background-image: linear-gradient(135deg, hsl(213, 19%, 17%), hsl(216, 12%, 10%));
     display: flex;
     flex-wrap: wrap;
+    min-width: 375px;
+    min-height: 500px;
 }
 
 .card-container div {
@@ -60,10 +62,29 @@ p {
 .card-container ul {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
     margin: 10px 0;
+    padding: 0;
 }
+
+.rating {
+    height: 1px;
+    width: 1px;
+    margin: 0;
+    padding: 25px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-blue);
+}
+
+.card-container ul p {
+    color: white;
+}
+
+
 
 .card-container button {
     width: 100%;
@@ -75,4 +96,55 @@ p {
     font-weight: 700;
     letter-spacing: 3px;
     color: var(--white);
+    transition: 0.1s;
+}
+
+.card-container button:hover {
+    cursor: pointer;
+}
+
+.card-container button:active {
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+li:hover {
+    background-color: var(--orange);
+    cursor: pointer;
+}
+
+.rating.selected{
+    background-color: var(--med-grey);
+}
+
+.hidden {
+    display: none;
+}
+
+.thank-you-container {
+    width: 30%;
+    height: 75%;
+    padding: 30px;
+    border-radius: 5%;
+    margin: auto;
+    background-image: linear-gradient(135deg, hsl(213, 19%, 17%), hsl(216, 12%, 10%));
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-width: 375px;
+    min-height: 500px;
+}
+
+.thank-you-container div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.selected-rating {
+    background-color: var(--dark-blue);
+    padding: 15px 40px;
+    border-radius: 50px;
 }

@@ -22,7 +22,7 @@
 
   <!-- Rating state start -->
 <div class="page-container">
-  <div class="card-container">
+  <div class="card-container hidden">
     <div> 
       <span class="img-container">
        <img src="images/icon-star.svg" alt="">
@@ -36,20 +36,22 @@
       to help us improve our offering!</p>
       </div>
     <div>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
+      <ul class="list-rating">
+        <li class="rating">1</li>
+        <li class="rating">2</li>
+        <li class="rating">3</li>
+        <li class="rating">4</li>
+        <li class="rating">5</li>
       </ul>
     </div>
   <div>
-    <button>SUBMIT</button>
+    <button class="submit">SUBMIT</button>
   </div>
     <!-- Rating state end -->
 
   <!-- Thank you state start -->
+
+ 
 
   <!-- You selected out of 5
 
@@ -58,8 +60,22 @@
   We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch! -->
   </div>
+  <div class="thank-you-container">
+    <div>
+      <img src="images/illustration-thank-you.svg" alt="">
+    </div>
+    <div>
+      <p class="selected-rating">You selected 4 out of 5 stars.</p>
+    </div>
+    <div>
+      <h2>Thank You!</h2>
+    </div>
+    <div>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch.</p>
+    </div>
+  </div>
 </div>
   <!-- Thank you state end -->
-
+<script src="script.js"></script>
 </body>
 </html>
