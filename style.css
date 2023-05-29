@@ -117,10 +117,6 @@ li:hover {
     background-color: var(--med-grey);
 }
 
-.hidden {
-    display: none;
-}
-
 .thank-you-container {
     width: 30%;
     height: 75%;
@@ -145,6 +141,11 @@ li:hover {
 
 .selected-rating {
     background-color: var(--dark-blue);
+    color: var(--orange);
     padding: 15px 40px;
     border-radius: 50px;
+}
+
+.hidden {
+    display: none;
 }
